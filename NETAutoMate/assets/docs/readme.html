@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>README</title>
+    </head>
+    <body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        
+        <center><img src="../images/logo.png"></center><p>
+
+        <h2><center>NET-AutoMate | README</center></h2>
+        <hr style="border-top: 5px solid #bbb; border-radius: 5px;">
+
+        <h3><center>NET-AutoMate is a Configuration Management Tool, that aids Network Engineers in Small Businesses to Manage Network Devices Effectively</center></h3>
+        <hr style="color:  #bbb;">
+
+        <!--CONTENTS-->
+
+        <h2><center>CONTENTS</center></h2>
+        <hr style="border-top: 5px solid #bbb; border-radius: 5px;">
+        <p><a href="#1"><b>1. </b>General Requirements</a></p>
+        <p><a href="#2"><b>2. </b>System Requirements</a></p>
+        <p><a href="#3"><b>3. </b>Device Compatibility</a></p>
+        <p><a href="#4"><b>4. </b>Automation Features</a></p>
+        <hr style="color:  #bbb;">
+
+        <!--GENERAL REQUIREMENTS-->
+     
+        <h2 id="1"><center>GENERAL REQUIREMENTS</center></h2>
+        <hr style="border-top: 5px solid #bbb; border-radius: 5px;">
+        <p><b>- Supported Device Vendors :</b> Arista, Cisco, Juniper *</p>
+        <p><b>- Supported Device Types :</b> Switches and Routers *</p>
+        <p><b>* NOTE 1 -</b> For Native Support, the Device should be NETCONF (Port 830) Compatible and support OpenConfig Model.</p>
+        <p><b>* NOTE 2 -</b> 'Legacy Mode' will be Enabled for Unsupported Devices that are only Compatible with SSH (Port 22). Currently Supports only Cisco Devices.</p>
+        <p><b>(The software will automatically check for the compatibility and will adjust the options acccordingly.)</b></p>
+        <hr style="color:  #bbb;">
+
+        <!--SYSTEM REQUIREMENTS-->
+
+        <h2 id="2"><center>SYSTEM REQUIREMENTS</center></h2>
+        <hr style="border-top: 5px solid #bbb; border-radius: 5px;">
+        <p><b>• Operating System -</b> Windows 7 (64-bit) or later versions.</p>
+        <p><b>• Memory (RAM) -</b> 2GB minimum.</p>
+        <p><b>• Processor Speed (CPU) -</b> 2.0Ghz and above.</p>
+        <p><b>• Storage -</b> 200MB after installation.</p>
+        <p>• Active Internet Connection for Installation of Additional Libraries. (Only during the Initial Startup of the Software)</p>
+        <p>• OpenSSH Client Feature Installed *</p>
+        <p><b>* NOTE 1 -</b> OpenSSH is not natively supported on Windows 8 and eariler versions. Install the provided 'OpenSSH for Windows' package during the Installation Setup.</p>
+        <p><b>* NOTE 2 -</b> For Systems running Windows 10 or Higher, Install the OpenSSH Client using 'Optional Features'.</p>
+        <hr style="color:  #bbb;">
+
+        <!--DEVICE COMPATIBILITY-->
+
+        <h2 id="3"><center>DEVICE COMPATIBILITY</center></h2>
+        <hr style="border-top: 5px solid #bbb; border-radius: 5px;">
+
+        <!--NATIVE SUPPORTED DEVICES-->
+
+        <h3>&nbsp;Native Support (NETCONF OpenConfig Devices)</h3>
+        <hr style="border-top: 2px solid #bbb;">
+
+        <h4>- Supported Virtual Devices :</h4>
+        <hr style="color:  #bbb;">
+        <p>• Arista vEOS L3 Switches</p>
+        <p>• Cisco CSR 1000v Routers</p>
+        <p>• Cisco Nexus 9000v Switches</p>
+        <p>• Juniper vSRX Firewalls (No OpenConfig) <b>- Added Native Support with v1.0.2</b></p>
+        <p>• Juniper vMX Routers</p>
+        <p>• Juniper vQFX Switches</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Supported Physical Devices :</h4>
+        <hr style="color:  #bbb;">
+        <p>• Arista 7280R3 Switches</p>
+        <p>• Arista 7800R3 Switches</p>
+        <p>• Cisco Switches running IOS-XE 16.3 or newer (Cisco Catalyst 3650 Series, 3850 Series, 9000 Series)</p>
+        <p>• Cisco Routers running IOS-XE 16.3 or newer (Cisco ISR 1000 Series, 4000 Series)</p>
+        <p>• Cisco Switches running NX-OS 9.3 (Cisco Nexus 9000 Series)</p>
+        <p>• Juniper Routers and Switches running Junos OS 18.3 or newer (QFX Series, PTX Series, MX Series)</p>
+        <hr style="color:  #bbb;">
+
+        <!--LEGACY SUPPORTED DEVICES-->
+
+        <h3>&nbsp;Legacy Support (All SSH Devices) - Compatible with all Cisco SSH Routers and Switches</h3>
+        <hr style="border-top: 2px solid #bbb;">
+
+        <h4>- Supported Virtual Devices :</h4>
+        <hr style="color:  #bbb;">
+        <p>• Cisco NX-OSv Switches</p>
+        <p>• Cisco IOSvL2 Switches</p>
+        <p>• Cisco IOSvL3 Switches</p>
+        <p>• Cisco IOSv Routers</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Supported Physical Devices :</h4>
+        <hr style="color:  #bbb;">
+        <p>• Cisco Nexus 7000 Series Switches</p>
+        <p>• Cisco Catalyst 1000 Series Switches</p>
+        <p>• Cisco ISR 1941 Series Routers</p>
+        <p>• Cisco Catalyst 2960-X Series Switches</p>
+        <p>• Cisco Legacy IOS Devices</p>
+        <hr style="color:  #bbb;">
+ 
+        <h2 id="4"><center>AUTOMATION FEATURES</center></h2>
+        <hr style="border-top: 5px solid #bbb; border-radius: 5px;">
+
+        <!--PERFORM COFIGURATIONS SECTION-->
+
+        <h3>&nbsp;Perform Configurations</h3>
+        <hr style="border-top: 2px solid #bbb;">
+
+        <h4>- Device Provisioning :</h4>
+        <p>In an instance where a business undergoes a device upgrade or replacement, it is required to have an initial connection with the device. The tool provides the feature to configure a new device by utilizing the serial connectivity method and push pre-configured templates for quick provisioning.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- VLAN Interface Configurations :</h4>
+        <p>VLANs can be created to segment the ports or a range of ports in a physical LAN by subnets. The user can define the number of VLANs and assign interfaces to them.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Routed Interface Configurations :</h4>
+        <p>IP addresses and subnet masks can be assigned to the interfaces in routers and modified where necessary.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Loopback Interface Configurations :</h4>
+        <p>Loopback Interface is a virtual interface that can be configured with IP addresses to identify the device in the network. This is to make sure that the device is reachable even if all other interfaces are down.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Backup Device Configurations :</h4>
+        <p>The configuration file of the device can be saved locally by simply performing a backup. This is helpful, if the device requires a configuration rollback or to migrate from the current device to a new one.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Translate VLAN Configurations :</h4>
+        <p>The tool is further introduced with a configuration translation feature. This would greatly benefit a business, if it wants to quickly copy and convert specific VLAN Interface configurations of a vendor device to another vendor.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Commit and Rollback Configurations :</h4>
+        <p>Commit is done to confirm the changes requested by the user. Rollback reverts changes to the original state where changes were made but has not been committed.</p>
+        <hr style="color:  #bbb;">
+
+        <!--TEST NETWORK CONNECTIVITY SECTION-->
+
+        <h3>&nbsp;Test Network Connectivity</h3>
+        <hr style="border-top: 2px solid #bbb;">
+
+        <h4>- Ping Devices :</h4>
+        <p>The user can log into the device (switch or router) to ping to any destination device (end-devices, routers, or switches) in the network.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Port Scanning :</h4>
+        <p>Port scanning helps to identify which ports are open in a network device or any host in the local network. By determining the status of the ports, the user can manage them to prevent any unauthorized persons from gaining access to the network.</p>
+        <hr style="color:  #bbb;">
+
+        <!--RETRIEVE INFORMATION SECTION-->
+
+        <h3>&nbsp;Retrieve Information</h3>
+        <hr style="border-top: 2px solid #bbb;">
+
+        <h4>- Retrieve ARP Table :</h4>
+        <p>The ARP table shows the list of entries of interfaces including, the Interface’s name, IP address and the associated MAC address.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Retrieve MAC Address Table :</h4>
+        <p>The MAC address table shows the list of entries of MAC addresses including, the Interface’s name and the associated VLAN.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Retrieve Running and Startup Configurations :</h4>
+        <p>Shows the running and startup configuration of the device. This can be used to differentiate the configuration stored in the memory with the candidate configuration.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Retrieve Device Information :</h4>
+        <p>Shows all information related to the device which includes, the Device Vendor, Model, Serial number, OS version, Hostname, Uptime, and the list of Interfaces.</p>
+        <hr style="color:  #bbb;">
+
+        <h4>- Device Vendor Verification :</h4>
+        <p>In a heterogenous network environment, the user may find difficulties to keep track of the device vendor, the IP Address corresponds to. With the help of vendor verification, the user can simply enter the IP Address of the device and verify the device vendor.</p>
+        <hr style="color:  #bbb;">
+
+        <p><center>NET-AutoMate 2023 | All Rights Reserved.</center></p>
+
+    </body>
+</html>

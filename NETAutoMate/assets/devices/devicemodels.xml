@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Devices>
+
+  <!--CISCO DEVICE LIST-->
+  <Cisco>
+    <Model>CSR 1000v</Model>
+    <Type>Router</Type>
+  </Cisco>
+  <Cisco>
+    <Model>Nexus 7000 Series</Model>
+    <Type>L3 Switch</Type>
+  </Cisco>
+  <Cisco>
+    <Model>Nexus 9000 Series</Model>
+    <Type>L3 Switch</Type>
+  </Cisco>
+  <Cisco>
+    <Model>Legacy IOS L2-Switches</Model>
+    <Type>L2 Switch</Type>
+  </Cisco>
+  <Cisco>
+    <Model>Legacy IOS L3-Switches</Model>
+    <Type>L3 Switch</Type>
+  </Cisco>
+  <Cisco>
+    <Model>Legacy IOS Routers</Model>
+    <Type>Router</Type>
+  </Cisco>
+  <Cisco>
+    <Model>Catalyst 2960-X Series</Model>
+    <Type>L2 Switch</Type>
+  </Cisco>
+  <Cisco>
+    <Model>ISR 1941 Series</Model>
+    <Type>Router</Type>
+  </Cisco>
+  <Cisco>
+    <Model>Catalyst 1000 Series</Model>
+    <Type>L3 Switch</Type>
+  </Cisco>
+
+  <!--ARISTA DEVICE LIST-->
+  <Arista>
+    <Model>EOS L3-Switches</Model>
+    <Type>L3 Switch</Type>
+  </Arista>
+  <Arista>
+    <Model>7280R3 Series</Model>
+    <Type>L3 Switch</Type>
+  </Arista>
+  <Arista>
+    <Model>7800R3 Series</Model>
+    <Type>L3 Switch</Type>
+  </Arista>
+
+  <!--JUNIPER DEVICE LIST-->
+  <Juniper>
+    <Model>SRX Series</Model>
+    <Type>L3 Switch</Type>
+  </Juniper>
+  <Juniper>
+    <Model>EX Series</Model>
+    <Type>L3 Switch</Type>
+  </Juniper>
+  <Juniper>
+    <Model>QFX Series</Model>
+    <Type>L3 Switch</Type>
+  </Juniper>
+  <Juniper>
+    <Model>MX Series</Model>
+    <Type>Router</Type>
+  </Juniper>
+
+</Devices>

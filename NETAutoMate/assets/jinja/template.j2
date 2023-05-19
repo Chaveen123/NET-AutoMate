@@ -1,0 +1,35 @@
+{% if dvendor == 'Cisco' and dtype == 'Switch' %}
+hostname {{hostname}}
+
+ip domain-name {{username}}
+
+username {{username}} privilege 15 secret {{password}}
+
+crypto key generate rsa modulus 1024
+
+line vty 0 4
+ login local
+ transport input ssh
+
+interface vlan {{vlanid}}
+ ip address {{ipaddress}} {{subnetmask}}
+ no shutdown
+
+{% elif dvendor == 'Cisco' and dtype == 'Router' %}
+hostname {{hostname}}
+
+ip domain-name {{username}}
+
+username {{username}} privilege 15 secret {{password}}
+
+crypto key generate rsa modulus 1024
+
+line vty 0 4
+ login local
+ transport input ssh
+
+interface {{interf}}
+ ip address {{ipaddress}} {{subnetmask}}
+ no shutdown
+ 
+{% endif %}

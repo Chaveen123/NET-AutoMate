@@ -1,0 +1,294 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>assets\images\icon.ico</ApplicationIcon>
+    <Version>$(VersionPrefix)</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\Debug\net6.0-windows\assets\**" />
+    <EmbeddedResource Remove="bin\Debug\net6.0-windows\assets\**" />
+    <None Remove="bin\Debug\net6.0-windows\assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="assets\devices\devicemodels.xml" />
+    <None Remove="assets\docs\readme.html" />
+    <None Remove="assets\docs\readme.txt" />
+    <None Remove="assets\docs\versioninfo.txt" />
+    <None Remove="assets\images\arsita.png" />
+    <None Remove="assets\images\background.jpg" />
+    <None Remove="assets\images\browsefile.png" />
+    <None Remove="assets\images\cisco.png" />
+    <None Remove="assets\images\clear.png" />
+    <None Remove="assets\images\continue.png" />
+    <None Remove="assets\images\csharp.png" />
+    <None Remove="assets\images\done.png" />
+    <None Remove="assets\images\help.png" />
+    <None Remove="assets\images\idea.png" />
+    <None Remove="assets\images\info.png" />
+    <None Remove="assets\images\juniper.png" />
+    <None Remove="assets\images\loading.gif" />
+    <None Remove="assets\images\loading_spin.gif" />
+    <None Remove="assets\images\logo.png" />
+    <None Remove="assets\images\lookup.png" />
+    <None Remove="assets\images\napalm.png" />
+    <None Remove="assets\images\netmiko.png" />
+    <None Remove="assets\images\next.png" />
+    <None Remove="assets\images\openconfig.png" />
+    <None Remove="assets\images\preconfigured.png" />
+    <None Remove="assets\images\previous.png" />
+    <None Remove="assets\images\provision.png" />
+    <None Remove="assets\images\python.png" />
+    <None Remove="assets\images\refresh.png" />
+    <None Remove="assets\images\refresh_small.png" />
+    <None Remove="assets\images\save.png" />
+    <None Remove="assets\images\wizard.png" />
+    <None Remove="assets\jinja\template.j2" />
+    <None Remove="assets\python\backupconfig.py" />
+    <None Remove="assets\python\configipinterfaces.py" />
+    <None Remove="assets\python\confignewdevice.py" />
+    <None Remove="assets\python\configroutedinterfaces.py" />
+    <None Remove="assets\python\createloopbackinterfaces.py" />
+    <None Remove="assets\python\createvlans.py" />
+    <None Remove="assets\python\getarptable.py" />
+    <None Remove="assets\python\getconfig.py" />
+    <None Remove="assets\python\getconfiglocal.py" />
+    <None Remove="assets\python\getdeviceinfo.py" />
+    <None Remove="assets\python\getinterfaces.py" />
+    <None Remove="assets\python\getipinterfaces.py" />
+    <None Remove="assets\python\getloopbackinterfaces.py" />
+    <None Remove="assets\python\getmactable.py" />
+    <None Remove="assets\python\getvlanaccessports.py" />
+    <None Remove="assets\python\getvlans.py" />
+    <None Remove="assets\python\pingdevice.py" />
+    <None Remove="assets\python\portscan.py" />
+    <None Remove="assets\python\prerequisites.py" />
+    <None Remove="assets\python\removeipinterfaces.py" />
+    <None Remove="assets\python\removeloopbackinterfaces.py" />
+    <None Remove="assets\python\removeroutedinterfaces.py" />
+    <None Remove="assets\python\removevlans.py" />
+    <None Remove="assets\python\saveconfig.py" />
+    <None Remove="assets\python\vendorlookup.py" />
+    <None Remove="assets\python\vlantranslation.py" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\devices\devicemodels.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\docs\readme.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\docs\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\docs\versioninfo.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\arsita.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\browsefile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\cisco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\clear.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\continue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\csharp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\done.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\help.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\idea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\info.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\juniper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\loading.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\loading_spin.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\lookup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\napalm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\netmiko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\next.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\openconfig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\preconfigured.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\previous.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\provision.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\python.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\refresh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\refresh_small.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\save.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\wizard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\jinja\template.j2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\backupconfig.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\confignewdevice.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\createloopbackinterfaces.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\createvlans.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getarptable.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getconfig.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getconfiglocal.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getdeviceinfo.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getinterfaces.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getloopbackinterfaces.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getmactable.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getvlanaccessports.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\getvlans.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\pingdevice.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\portscan.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\prerequisites.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\removeloopbackinterfaces.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\removeroutedinterfaces.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\removevlans.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\saveconfig.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\vendorlookup.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\python\vlantranslation.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\python\configroutedinterfaces.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="System.IO.Ports" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="SaveConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoopbackInterfacesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GetConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VLANInterfacesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net6.0-windows\" />
+  </ItemGroup>
+
+</Project>
